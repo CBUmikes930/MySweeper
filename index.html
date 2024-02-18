@@ -5,22 +5,32 @@
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="difficultyChanged()">
     <header>
         <h1>MySweeper: A Mine Sweeper Clone</h1>
         <label for="difficulty">Difficulty:</label>
-        <select id="difficulty" name="difficulty">
+        <select id="difficulty" name="difficulty" onchange="difficultyChanged()">
             <option value="easy">Easy</option>
             <option value="medium">Medium</option>
             <option value="hard">Hard</option>
+            <option value="custom">Custom</option>
         </select>
         <input type="button" value="New Game" onclick="newGame()">
-        <input type="button" value="Show Values" onclick="showValues()">
+        <br><br>
+        <span id="custom_params">
+            <label for="rows">Rows:</label>
+            <input type="number" value="9" name="rows" id="rows">
+            <label for="cols">Columns:</label>
+            <input type="number" value="9" name="cols" id="cols">
+            <label for="mines">Mines:</label>
+            <input type="number" value="10" name="mines" id="mines">
+        </span>
     </header>
     <main>
         <table id="game_board">
         </table>
         <h3 id="mine_count">Mines Remaining: 0</h3>
+        <h3 id="timer">Time: 00:00</h3>
     </main>
 </body>
 </html> 

@@ -2,6 +2,10 @@ main {
     padding: 25px;
 }
 
+#custom_params input {
+    width: 50px;
+}
+
 table {
     border: 5px solid #A0A0A0;
 }
@@ -19,6 +23,11 @@ table tr td {
     font-weight: bold;
 }
 
+h3 {
+    margin: 0px;
+    padding: 5px;
+}
+
 .mine {
     background-color: red;
 }
@@ -30,4 +39,36 @@ table tr td {
 .checked {
     background-color: #A0A0A0;
     border: 3px solid #A0A0A0;
+}
+
+.color-1 {
+    color: green;
+}
+
+.color-2 {
+    color: lime;
+}
+
+.color-3 {
+    color: yellow;
+}
+
+.color-4 {
+    color: orange;
+}
+
+.color-5 {
+    color: orangered;
+}
+
+.color-6 {
+    color: red;
+}
+
+.color-7 {
+    color: red;
+}
+
+.color-8 {
+    color: red;
 }
