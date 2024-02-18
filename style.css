@@ -1,0 +1,33 @@
+main {
+    padding: 25px;
+}
+
+table {
+    border: 5px solid #A0A0A0;
+}
+
+table tr td {
+    background-color: #C0C0C0;
+    border-top: 2px solid #E0E0E0;
+    border-left: 2px solid #E0E0E0;
+    border-right: 3px solid #505050;
+    border-bottom: 3px solid #505050;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.mine {
+    background-color: red;
+}
+
+.flagged {
+    background-color: yellow;
+}
+
+.checked {
+    background-color: #A0A0A0;
+    border: 3px solid #A0A0A0;
+}

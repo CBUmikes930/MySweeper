@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MySweeper</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MySweeper: A Mine Sweeper Clone</h1>
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty" name="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <input type="button" value="New Game" onclick="newGame()">
+        <input type="button" value="Show Values" onclick="showValues()">
+    </header>
+    <main>
+        <table id="game_board">
+        </table>
+        <h3 id="mine_count">Mines Remaining: 0</h3>
+    </main>
+</body>
+</html> 
