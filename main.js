@@ -133,7 +133,7 @@ function clickCell(target) {
             clearInterval(timer_interval)
             timer_interval = undefined
             alert("Game Over!")
-        }, 100)
+        }, 250)
     } else {
         // Show nearby values of the selected cell
         showNearbyValues(coords[1], coords[0])
@@ -143,7 +143,7 @@ function clickCell(target) {
             clearInterval(timer_interval)
             timer_interval = undefined
             alert("You Win!")
-        }, 100)
+        }, 250)
     }
 }
 
